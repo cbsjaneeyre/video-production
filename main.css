@@ -3,7 +3,7 @@
 }
 
 .main-page-wrapper {
-  background: url("./hero.png") center top no-repeat, url("./bottom-pic.png") center bottom no-repeat;
+  background: url("./hero.png") center top no-repeat, url("./bottom-pic.png") center bottom 306px no-repeat;
  }
 
 body {
