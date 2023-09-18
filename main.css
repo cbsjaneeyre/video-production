@@ -143,7 +143,6 @@ address {
 
 .video {
   margin-bottom: 180px;
-  width: 1140px;
   min-height: 476px;
 }
 
@@ -207,8 +206,6 @@ address {
 }
 
 .news {
-  width: 1139px;
-  height: 552px;
   margin-bottom: 145px;
 }
 
@@ -295,13 +292,13 @@ address {
 .abous-us {
   width: 1139px;
   min-height: 552px;
-  margin-bottom: 54px;
 }
 
 .about-us__image {
   display: inline-block;
   width: 490px;
   height: 505px;
+  vertical-align: top;
 }
 
 .about-us__info {
@@ -312,8 +309,8 @@ address {
   color: #000;
   margin-left: -137px;
   border-radius: 5px;
-  border: 0;
-  margin-bottom: 49px;
+  margin-top: 94px;
+  margin-bottom: 64px;
 }
 
 .about-us__info-title {
