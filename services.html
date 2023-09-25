@@ -14,8 +14,8 @@
 </head>
 <body>
   <div class="wrapper services-wrapper">
-    <div class="container">
-      <section class="top">
+    <section class="top">
+      <div class="container container--services">
         <header class="header">
           <a href="/" class="logo">
             <img src="./pics/logo.png" alt="logo" class="logo__image">
@@ -38,24 +38,26 @@
             <div class="contacts__schedule">График работы</div>
           </address>
           <!--div class="work">
-            <p class="work__time"><b>пн-вс: 09:00-20:00</b></p>
-            <p class="work__lunch">Обед: 14:00-14:30</p>
-          </div-->
+              <p class="work__time"><b>пн-вс: 09:00-20:00</b></p>
+              <p class="work__lunch">Обед: 14:00-14:30</p>
+            </div-->
         </header>
         <h1 class="title">Услуги</h1>
         <nav class="breadcrumbs">
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item">
-              <a href="#" class="breadcrumbs-link">Главная</a>
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a>
             </li>
-            <li class="breadcrumbs-item">
-              <a href="#" class="breadcrumbs-link breadcrumbs-link--clicked">Услуги</a>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link breadcrumbs__link--clicked">Услуги</a>
             </li>
           </ul>
         </nav>
-      </section>
-      <main class="content content--services">
-        <section class="services">
+      </div>
+    </section>
+    <main class="content content--services">
+      <section class="services">
+        <div class="container">
           <ul class="services__shooting-list">
             <li class="services__shooting-item">
               <img src="./pics/girls.png" alt="mv" class="services__shooting-image">
@@ -114,8 +116,10 @@
               </li>
             </ul>
           </div>
-        </section>
-        <section class="partners">
+        </div>
+      </section>
+      <section class="partners">
+        <div class="container">
           <div class="partners__title">
             <h2 class="partners__title-text">Партнеры</h2>
           </div>
@@ -163,8 +167,10 @@
               </li>
             </ul>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
+    <div class="container">
       <footer class="footer">
         <a href="/" class="logo">
           <img src="./pics/logo.png" alt="logo" class="logo__image">
@@ -201,7 +207,7 @@
           <a href="tel:+78007003030" class="contacts__tel">8 800 700 30 30</a>
         </address>
       </footer>
+    </div>
   </div>
 </body>
-
 </html>

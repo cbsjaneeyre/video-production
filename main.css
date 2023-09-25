@@ -76,7 +76,7 @@ address {
 
 
 
-.container-top {
+.top--main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -430,7 +430,7 @@ address {
   background: #17191C url("./pics/top-line.png") center top no-repeat;
 }
 
-.top {
+.container--services {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -447,37 +447,37 @@ address {
   padding-bottom: 28px;
 }
 
-.breadcrumbs-list {
+.breadcrumbs__list {
   display: flex;
   justify-content: flex-start;
 }
 
-.breadcrumbs-item {
+.breadcrumbs__item {
   display: flex;
   color: #9A9A9A;
   margin-right: 6px;
 }
 
-.breadcrumbs-link {
+.breadcrumbs__link {
   text-decoration: underline;
   margin-right: 6px;
 }
 
-.breadcrumbs-link:last-child {
+.breadcrumbs__link:last-child {
   margin-right: 0;
 }
 
-.breadcrumbs-item:after {
+.breadcrumbs__item:after {
   content: "/";
   color: #9A9A9A;
   margin-left: 6px;
 }
 
-.breadcrumbs-item:last-child:after {
+.breadcrumbs__item:last-child:after {
   display: none;
 }
 
-.breadcrumbs-link--clicked {
+.breadcrumbs__link--clicked {
   font-weight: 700;
 }
 
@@ -485,7 +485,7 @@ address {
 
 .services {
   background-color: #fff;
-  padding-bottom: 84px;
+  padding-bottom: 63px;
 }
 
 .content--services {
@@ -496,7 +496,7 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 64px;
 }
 
 .services__shooting-item {
@@ -509,7 +509,7 @@ address {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 12px 0px 25px 60px;
+  padding: 12px 0px 19px 56px;
 }
 
 .services__shooting-info-title {
@@ -533,6 +533,8 @@ address {
   flex-direction: column;
   justify-content: space-between;
   background: #F4F5F5;
+  padding-top: 109px;
+  padding-bottom: 51px;
 }
 
 .partners__title-text {
@@ -540,7 +542,6 @@ address {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 82px;
-  padding-top: 88px;
 }
 
 .partners__companies-list {
@@ -552,7 +553,7 @@ address {
 
 .partners__companies-item {
   margin-right: 128px;
-  margin-bottom: 75px;
+  margin-bottom: 56px;
   filter: grayscale(1);
 }
 
