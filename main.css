@@ -96,14 +96,17 @@ address {
   width: 264px;
 }
 
-.menu__link:hover {
+.menu__item {
+  transition: .5s;
+}
+
+.menu__item:hover {
   color: #FF3D00;
   transition: .5s;
 }
 
-.dropdown {
-  position: relative;
-  min-width: 124px;
+.menu__item--active .menu__link {
+  color: #FF3D00;
 }
 
 .dropdown__contacts {
@@ -115,6 +118,7 @@ address {
 }
 
 .dropdown__contacts-schedule {
+  position: relative;
   color: #FF3D00;
   font-size: 13px;
   text-decoration: underline;
@@ -123,7 +127,7 @@ address {
   display: inline-block;
 }
 
-.dropdown__work {
+.dropdown__contacts-schedule-work {
   position: absolute;
   background-image: url("./pics/dropdown.svg");
   font-size: 13px;
@@ -133,32 +137,32 @@ address {
   width: 157px;
   border-radius: 5px;
   top: 100%;
-  margin-left: 33px;
+  margin-left: -61px;
   margin-top: 7px;
   left: 1000px;
   opacity: 0;
   transition: opacity .5s;
 }
 
-.dropdown__work:before {
+.dropdown__contacts-schedule-work:before {
   content: "";
   display: block;
   height: 21px;
   left: 0;
   right: 0;
-  top: -16px;
+  top: -10px;
   position: absolute;
 }
 
-.dropdown__work-time {
+.dropdown__contacts-schedule-work-time {
   font-weight: 700;
 }
 
-.dropdown__work-lunch {
+.dropdown__contacts-schedule-work-lunch {
   font-weight: 600;
 }
 
-.dropdown:hover .dropdown__work {
+.dropdown__contacts-schedule:hover .dropdown__contacts-schedule-work {
   left: 0;
   opacity: 1;
 }
@@ -681,7 +685,7 @@ address {
   padding-top: 156px;
 }
 
-.content__login {
+.welcome__content-login {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -718,7 +722,7 @@ address {
   transition: .5s;
 }
 
-.content__login-logo-image {
+.welcome__content-login-logo-image {
   margin-bottom: 38px;
 }
 
@@ -857,12 +861,12 @@ address {
 
 .opinion__form-row {
   display: flex;
+  margin-bottom: 26px;
 }
 
 .opinion__form-row-input {
   flex: 1;
   margin-right: 28px;
-  margin-bottom: 26px;
   background: #FFF;
   border-radius: 5px;
   border: 1px transparent;
@@ -904,6 +908,11 @@ address {
   flex-wrap: wrap;
 }
 
+.opinion__services-item {
+  margin-right: 18px;
+  margin-bottom: 10px;
+}
+
 .opinion__services-choice {
   display: inline-flex;
   padding: 9px 15px;
@@ -911,8 +920,6 @@ address {
   background: #E7E7E7;
   color: #303030;
   font-size: 13px;
-  margin-right: 18px;
-  margin-bottom: 10px;
 }
 
 .opinion__services-item:nth-child(5) {
